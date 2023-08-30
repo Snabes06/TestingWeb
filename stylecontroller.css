@@ -1,3 +1,7 @@
+:root {
+    --globalheight: 1000px;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -37,7 +41,7 @@ li {
 
 .main {
     margin-top: 30px;
-    height: 1000px
+    height: var(--globalheight);
 }
 
 body {
@@ -45,9 +49,10 @@ body {
 }
 
 .blurredscreen {
-    padding: 500px;
-    background: rgba(15, 17, 45, 0.683);
-    filter: blur(1px);
+    padding: 20px;
+    height: var(--globalheight);
+    background: rgba(13, 14, 36, 0.767);
+    filter: blur(4px);
     margin-left: auto;
     margin-right: auto;
     border-radius: 8px;
@@ -65,9 +70,9 @@ body {
     font-size: 50px;
 }
 
-@media (max-width: 600px){
+@media screen and (max-width: 600px){
     .navbar {
-        width: 80%;
+        width: 100%;
         height: auto;
     }
 }
