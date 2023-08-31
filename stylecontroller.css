@@ -1,5 +1,11 @@
 :root {
     --globalheight: 1000px;
+    --globalanimationspeed: FadeIn 0.5s;
+}
+
+@keyframes FadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 * {
@@ -30,13 +36,13 @@ li {
     padding: 15px 17px;
     text-decoration: none;
     font-size: 18px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:Georgia, 'Times New Roman', Times, serif; 
 }
 
 .navbar a:hover {
+    animation: var(--globalanimationspeed);
     background:rgb(108, 121, 179);
     color: black;
-    
 }
 
 .main {
@@ -52,22 +58,23 @@ body {
     padding: 20px;
     height: var(--globalheight);
     background: rgba(13, 14, 36, 0.767);
-    filter: blur(4px);
+    filter: blur(1px);
     margin-left: auto;
     margin-right: auto;
     border-radius: 8px;
-    width: 70%;
+    width: 85%;
     text-align: center;
     display: block;
     z-index: min;
 }
 
-.blurredscreen h1 {
-    text-align: left;
+h1 {
+    text-align: center;
     color: white;
     filter: none;
     border-radius: 0px;
     font-size: 50px;
+    z-index:1;
 }
 
 @media screen and (max-width: 600px){
