@@ -87,4 +87,9 @@ body {
         width: 100%;
         height: auto;
     }
+
+    .blurredscreen {
+        width: 85%;
+        height: auto;
+    }
 }
